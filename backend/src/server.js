@@ -7,6 +7,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const transactionsRouter = require("./routes/transactions");
+app.use("/transactions", transactionsRouter);
+
 // health route
 app.get("/health", (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
