@@ -10,6 +10,9 @@ app.use(express.json());
 const transactionsRouter = require("./routes/transactions");
 app.use("/transactions", transactionsRouter);
 
+const analyticsRouter = require("./routes/analytics");
+app.use("/analytics", analyticsRouter);
+
 // health route
 app.get("/health", (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
