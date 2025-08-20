@@ -49,7 +49,7 @@ export default function App() {
         fontFamily: "system-ui, sans-serif",
       }}
     >
-      <h1>FreelanceTaxPlanner (2020)</h1>
+      <h1>FreelanceTaxPlanner</h1>
       <p>Base currency: INR (₹)</p>
 
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
